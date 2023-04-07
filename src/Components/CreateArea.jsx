@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './keeper.css';
 
-function CreateArea() {
+function CreateArea(props) {
   const [note, setNote] = useState({
     title: '',
     content: '',
@@ -9,21 +9,32 @@ function CreateArea() {
 
   function handleChange(e) {
     const { name, value } = e.target;
-    // console.log(name)
-    console.log(value)
+
+    setNote(preValue => {
+      return {
+        ...preValue,
+        [name]: value,
+      };
+    });
   }
+
+  function submitNote(e) {
+    e.preventDefault();
+    props.onAdd(note);
+  }
+
 
   return (
     <>
       <form>
-        <input name={note.title} placeholder="Title" onChange={handleChange} />
+        <input name='title' placeholder="Title" onChange={handleChange} />
         <textarea
-          name={note.content}
+          name='content'
           placeholder="Take a note..."
           rows="3"
           onChange={handleChange}
         />
-        <button>Add</button>
+        <button onClick={submitNote}>Add</button>
       </form>
     </>
   );

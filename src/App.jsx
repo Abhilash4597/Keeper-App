@@ -3,7 +3,6 @@ import './Components/Keeper.css';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Note from './Components/Note';
-import data from './Components/Data';
 import CreateArea from './Components/CreateArea';
 
 function App() {
@@ -11,7 +10,7 @@ function App() {
     <>
       <Header />
       <CreateArea />
-      <Note data={data} />
+      <Note title="Note title" content="Note content" />
       <Footer />
     </>
   );

@@ -28,9 +28,9 @@ header h1 {
 /* Footer Component */
 
 footer {
-  position: absolute;
-  text-align: center;
-  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 2.5rem;
 }

@@ -21,15 +21,15 @@ function CreateArea(props) {
   function submitNote(e) {
     e.preventDefault();
     props.onAdd(note);
+    setNote({ title: '', content: '' });
   }
-
 
   return (
     <>
       <form>
-        <input name='title' placeholder="Title" onChange={handleChange} />
+        <input name="title" placeholder="Title" onChange={handleChange} />
         <textarea
-          name='content'
+          name="content"
           placeholder="Take a note..."
           rows="3"
           onChange={handleChange}

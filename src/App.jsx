@@ -14,7 +14,13 @@ function App() {
     });
   }
 
-  function deleteNote() {}
+  function deleteNote(id) {
+    setAllNotes((preNote) => {
+      return preNote.filter((notes, index) => {
+        return index !== id;
+      })
+    })
+  }
 
   return (
     <>
@@ -27,6 +33,7 @@ function App() {
             title={allItem.title}
             content={allItem.content}
             onDelete={deleteNote}
+            id={id}
           />
         );
       })}

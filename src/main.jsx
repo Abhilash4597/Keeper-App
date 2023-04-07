@@ -1,10 +1,17 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
+import React from 'react';
+import Header from './Keeper-App/Header';
+import Footer from './Keeper-App/Footer';
+import Note from './Keeper-App/Note';
+import data from './Keeper-App/Data';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+function App() {
+  return (
+    <>
+      <Header />
+      <Note data={ data } />
+      <Footer />
+    </>
+  );
+}
+
+export default App;

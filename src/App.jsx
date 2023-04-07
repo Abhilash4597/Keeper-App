@@ -15,28 +15,30 @@ function App() {
   }
 
   function deleteNote(id) {
-    setAllNotes((preNote) => {
+    setAllNotes(preNote => {
       return preNote.filter((notes, index) => {
         return index !== id;
-      })
-    })
+      });
+    });
   }
 
   return (
     <>
       <Header />
       <CreateArea onAdd={addNote} />
-      {allNotes.map((allItem, id) => {
-        return (
-          <Note
-            key={id}
-            title={allItem.title}
-            content={allItem.content}
-            onDelete={deleteNote}
-            id={id}
-          />
-        );
-      })}
+      <div className="note-container">
+        {allNotes.map((allItem, id) => {
+          return (
+            <Note
+              key={id}
+              title={allItem.title}
+              content={allItem.content}
+              onDelete={deleteNote}
+              id={id}
+            />
+          );
+        })}
+      </div>
       <Footer />
     </>
   );

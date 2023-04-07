@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from './Keeper-App/Header';
-import Footer from './Keeper-App/Footer';
-import Note from './Keeper-App/Note';
-import data from './Keeper-App/Data';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+import Note from './Components/Note';
+import data from './Components/Data';
 
 function App() {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import './keeper.css';
-import DeleteIcon from '@mui/icons-material/Delete';
+
 
 export default function Note(props) {
   function handleClick() {
@@ -12,7 +12,7 @@ export default function Note(props) {
       <div className="note">
         <h1>{props.title}</h1>
         <p>{props.content}</p>
-        <button onClick={handleClick}><DeleteIcon/></button>
+        <button onClick={handleClick}>DELETE</button>
       </div>
     </>
   );

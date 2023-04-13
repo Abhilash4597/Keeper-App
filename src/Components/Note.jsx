@@ -1,7 +1,6 @@
 import React from 'react';
 import './keeper.css';
 
-
 export default function Note(props) {
   function handleClick() {
     props.onDelete(props.id);

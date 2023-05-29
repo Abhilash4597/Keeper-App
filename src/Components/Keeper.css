@@ -84,9 +84,8 @@ footer p {
   outline: none;
 }
 
-/*# InputArea Component */ */
-
-form.create-note {
+/*# InputArea Component */
+*/ form.create-note {
   position: relative;
   width: 480px;
   margin: 30px auto 20px auto;

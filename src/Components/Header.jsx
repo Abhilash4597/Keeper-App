@@ -4,7 +4,7 @@ import './keeper.css';
 export default function Header() {
   return (
     <header>
-      <h1>Keeper</h1>
+      <h1>KEEPER</h1>
     </header>
   );
 }

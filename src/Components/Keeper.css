@@ -10,7 +10,7 @@ body {
   background: #eee;
 }
 
-/*# Header Component */
+/*#-------------------------------------- Header Component */
 
 header {
   background-color: #f5ba13;
@@ -25,7 +25,7 @@ header h1 {
   font-weight: 200;
 }
 
-/*# Note Component */
+/*#-------------------------------------- Note Component */
 
 .note-container {
   display: flex;
@@ -68,7 +68,8 @@ header h1 {
   outline: none;
 }
 
-/*# InputArea Component */
+/*#-------------------------------------- InputArea Component */
+
 form.create-note {
   position: relative;
   width: 480px;
@@ -105,7 +106,7 @@ form.create-note button {
   outline: none;
 }
 
-/*# Footer Component */
+/*#-------------------------------------- Footer Component */
 
 footer {
   display: flex;

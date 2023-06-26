@@ -68,6 +68,14 @@ header h1 {
   outline: none;
 }
 
+/* # ------------------------------------------------extra */
+.delete{
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*#-------------------------------------- InputArea Component */
 
 form.create-note {
